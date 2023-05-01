@@ -36,7 +36,7 @@ namespace CapaPresentacion
             oCe_Usuario.NombreUsuario = TxtUsuario.Text;
             oCe_Usuario.ContraseniaUsuario = TxtContrasenia.Text;
 
-            if (!string.IsNullOrEmpty(TxtUsuario.Text) || !string.IsNullOrEmpty(TxtContrasenia.Text))
+            if (string.IsNullOrEmpty(TxtUsuario.Text) || string.IsNullOrEmpty(TxtContrasenia.Text))
             {
                 MessageBox.Show("Hay campos vacios.");
             }
