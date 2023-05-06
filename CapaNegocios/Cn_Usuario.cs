@@ -37,15 +37,6 @@ namespace CapaNegocios
             }
         }
 
-        public void ActualizarUsuario(Ce_Usuario ActualizarUsuario)
-        {
-            oCd_Usuario.ActualizarUsuario(ActualizarUsuario);
-        }
-        public void EliminarUsuario(Ce_Usuario EliminarUsuario)
-        {
-
-        }
-
         public bool ValidarUsuario(Ce_Usuario ValidarUsuario)
         {
             bool valUsuario = false;
@@ -61,6 +52,16 @@ namespace CapaNegocios
             }
 
             return valUsuario;
+        }
+
+        public void ActualizarUsuario(Ce_Usuario ActualizarUsuario)
+        {
+            oCd_Usuario.ActualizarUsuario(ActualizarUsuario);
+        }
+        
+        public void EliminarUsuario(Ce_Usuario EliminarUsuario)
+        {
+            oCd_Usuario.EliminarUsuario(EliminarUsuario);
         }
 
         private static string EncriptarContrasenia(Ce_Usuario oCe_Usuario)

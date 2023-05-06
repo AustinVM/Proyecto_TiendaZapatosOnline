@@ -24,15 +24,14 @@ namespace CapaDatos
 
         public DataTable ConsultarRol()
         {
+            DataTable tabla = new DataTable();
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 conex.Open();
-                using (SqlCommand cmd = new SqlCommand("", conex))
+                using (SqlCommand cmd = new SqlCommand("SP_ConsultarRol", conex))
                 {
-                    DataTable tabla = new DataTable();
-                    SqlDataReader leer;
                     cmd.CommandType = CommandType.StoredProcedure;
-                    leer = cmd.ExecuteReader();
+                    SqlDataReader leer = cmd.ExecuteReader();
                     tabla.Load(leer);
                     return tabla;
                 }

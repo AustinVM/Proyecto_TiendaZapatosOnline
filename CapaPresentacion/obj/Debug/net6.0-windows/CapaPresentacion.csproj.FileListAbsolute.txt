@@ -50,9 +50,6 @@ c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escri
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\bin\Debug\net6.0-windows\CapaNegocios.pdb
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\bin\Debug\net6.0-windows\CapaDatos.pdb
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.csproj.AssemblyReference.cache
-c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.Login.resources
-c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.MenuPrincipal.resources
-c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.csproj.GenerateResource.cache
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.GeneratedMSBuildEditorConfig.editorconfig
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.AssemblyInfoInputs.cache
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.AssemblyInfo.cs
@@ -60,3 +57,5 @@ c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escri
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.csproj.CopyComplete
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.genruntimeconfig.cache
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\ref\CapaPresentacion.dll
+C:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.Frm_Login.resources
+C:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.csproj.GenerateResource.cache

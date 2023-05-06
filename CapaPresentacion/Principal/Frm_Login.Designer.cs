@@ -114,9 +114,10 @@
             // 
             // CmbRol
             // 
-            CmbRol.BackColor = Color.FromArgb(15, 15, 15);
+            CmbRol.BackColor = Color.White;
             CmbRol.DropDownHeight = 100;
             CmbRol.DropDownStyle = ComboBoxStyle.DropDownList;
+            CmbRol.ForeColor = SystemColors.InfoText;
             CmbRol.FormattingEnabled = true;
             CmbRol.IntegralHeight = false;
             CmbRol.Location = new Point(322, 91);
@@ -135,7 +136,7 @@
             label3.TabIndex = 7;
             label3.Text = "LOGIN";
             // 
-            // Login
+            // Frm_Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -150,7 +151,7 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Login";
+            Name = "Frm_Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
