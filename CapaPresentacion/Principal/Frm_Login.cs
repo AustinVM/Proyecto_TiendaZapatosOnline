@@ -1,5 +1,5 @@
-﻿using CapaEntidades;
-using CapaNegocios;
+﻿using CapaEntidades.UsuarioSistema;
+using CapaNegocios.UsuarioSistema;
 
 namespace CapaPresentacion
 {

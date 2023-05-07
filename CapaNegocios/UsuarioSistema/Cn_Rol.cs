@@ -1,8 +1,8 @@
-﻿using CapaDatos;
-using CapaEntidades;
+﻿using CapaDatos.UsuarioSistema;
+using CapaEntidades.UsuarioSistema;
 using System.Data;
 
-namespace CapaNegocios
+namespace CapaNegocios.UsuarioSistema
 {
     public class Cn_Rol
     {

@@ -1,4 +1,4 @@
-﻿namespace CapaEntidades
+﻿namespace CapaEntidades.Productos
 {
     public class Ce_Color
     {

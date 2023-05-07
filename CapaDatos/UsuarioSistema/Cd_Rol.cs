@@ -1,25 +1,25 @@
-﻿using CapaEntidades;
+﻿using CapaDatos.Conexion;
+using CapaEntidades.UsuarioSistema;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace CapaDatos
+namespace CapaDatos.UsuarioSistema
 {
-    public class Cd_Usuario
+    public class Cd_Rol
     {
-        public void AniadirUsuario(Ce_Usuario AniadirUsuario)
+        public void AniadirRol(Ce_Rol AniadirRol)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 try
                 {
                     conex.Open();
-                    using (SqlCommand cmd = new SqlCommand("", conex))
+                    using (SqlCommand cmd = new SqlCommand("SP_AniadirRol", conex))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@nombre", AniadirUsuario.NombreUsuario);
-                        cmd.Parameters.AddWithValue("@contrasenia", AniadirUsuario.ContraseniaUsuario);
-                        cmd.Parameters.AddWithValue("@ID_rol", AniadirUsuario.ID_rol);
-                        cmd.Parameters.AddWithValue("@estado", AniadirUsuario.EstadoUsuario);
+                        cmd.Parameters.AddWithValue("@id", AniadirRol.idRol);
+                        cmd.Parameters.AddWithValue("@nombre", AniadirRol.nombreRol);
+                        cmd.Parameters.AddWithValue("@estado", AniadirRol.estadoRol);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -34,28 +34,19 @@ namespace CapaDatos
             }
         }
 
-        public List<Ce_Usuario> ConsultarUsuario()
+        public DataTable ConsultarRol()
         {
-            List<Ce_Usuario> listaUsuarios = new List<Ce_Usuario>();
+            DataTable tabla = new DataTable();
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 try
                 {
                     conex.Open();
-                    using (SqlCommand cmd = new SqlCommand("SP_ConsultarUsuario", conex))
+                    using (SqlCommand cmd = new SqlCommand("SP_ConsultarRol", conex))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         SqlDataReader leer = cmd.ExecuteReader();
-                        while (leer.Read())
-                        {
-                            Ce_Usuario DatosUsuarios = new Ce_Usuario();
-                            DatosUsuarios.id = leer.GetInt32(0);
-                            DatosUsuarios.NombreUsuario = leer.GetString(1);
-                            DatosUsuarios.ContraseniaUsuario = leer.GetString(2);
-                            DatosUsuarios.ID_rol = leer.GetInt32(3);
-                            DatosUsuarios.EstadoUsuario = leer.GetBoolean(4);
-                            listaUsuarios.Add(DatosUsuarios);
-                        }
+                        tabla.Load(leer);
                     }
                 }
                 catch (SqlException SqlEx)
@@ -66,22 +57,23 @@ namespace CapaDatos
                 {
                     Console.WriteLine("Ocurrio un error." + ex.Message);
                 }
-                return listaUsuarios;
+                return tabla;
             }
         }
 
-        public void ActualizarUsuario(Ce_Usuario ActualizarUsuario)
+        public void ActualizarRol(Ce_Rol ActualizarRol)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 try
                 {
                     conex.Open();
-                    using (SqlCommand cmd = new SqlCommand("", conex))
+                    using (SqlCommand cmd = new SqlCommand("SP_ActualizarRol", conex))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@nombre", ActualizarUsuario.NombreUsuario);
-                        cmd.Parameters.AddWithValue("@estado", ActualizarUsuario.EstadoUsuario);
+                        cmd.Parameters.AddWithValue("@id", ActualizarRol.idRol);
+                        cmd.Parameters.AddWithValue("@nombre", ActualizarRol.nombreRol);
+                        cmd.Parameters.AddWithValue("@estado", ActualizarRol.estadoRol);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -96,17 +88,17 @@ namespace CapaDatos
             }
         }
 
-        public void EliminarUsuario(Ce_Usuario EliminarUsuario)
+        public void EliminarRol(Ce_Rol EliminarRol)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 try
                 {
                     conex.Open();
-                    using (SqlCommand cmd = new SqlCommand("", conex))
+                    using (SqlCommand cmd = new SqlCommand("SP_EliminarRol", conex))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@nombre", EliminarUsuario.id);
+                        cmd.Parameters.AddWithValue("@id", EliminarRol.idRol);
                         cmd.ExecuteNonQuery();
                     }
                 }

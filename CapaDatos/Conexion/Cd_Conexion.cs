@@ -1,4 +1,4 @@
-﻿namespace CapaDatos
+﻿namespace CapaDatos.Conexion
 {
     public class Cd_Conexion
     {

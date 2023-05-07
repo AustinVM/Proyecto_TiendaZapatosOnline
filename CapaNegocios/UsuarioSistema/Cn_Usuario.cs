@@ -1,10 +1,10 @@
-﻿using CapaDatos;
-using CapaEntidades;
+﻿using CapaDatos.UsuarioSistema;
+using CapaEntidades.UsuarioSistema;
 using System.Data;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace CapaNegocios
+namespace CapaNegocios.UsuarioSistema
 {
     public class Cn_Usuario
     {
@@ -42,8 +42,8 @@ namespace CapaNegocios
             bool valUsuario = false;
 
             ValidarUsuario.ContraseniaUsuario = EncriptarContrasenia(ValidarUsuario);
-            var Consulta = from d in oCd_Usuario.ConsultarUsuario() 
-                           where (d.NombreUsuario == ValidarUsuario.NombreUsuario && d.ContraseniaUsuario == ValidarUsuario.ContraseniaUsuario && d.ID_rol == ValidarUsuario.ID_rol)
+            var Consulta = from d in oCd_Usuario.ConsultarUsuario()
+                           where d.NombreUsuario == ValidarUsuario.NombreUsuario && d.ContraseniaUsuario == ValidarUsuario.ContraseniaUsuario && d.ID_rol == ValidarUsuario.ID_rol
                            select d;
 
             if (Consulta.Any())
@@ -58,7 +58,7 @@ namespace CapaNegocios
         {
             oCd_Usuario.ActualizarUsuario(ActualizarUsuario);
         }
-        
+
         public void EliminarUsuario(Ce_Usuario EliminarUsuario)
         {
             oCd_Usuario.EliminarUsuario(EliminarUsuario);

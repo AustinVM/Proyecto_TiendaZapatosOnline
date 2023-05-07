@@ -1,4 +1,4 @@
-﻿namespace CapaEntidades
+﻿namespace CapaEntidades.UsuarioSistema
 {
     public class Ce_Rol
     {

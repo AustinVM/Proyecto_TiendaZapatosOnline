@@ -15,4 +15,10 @@
     <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Cliente\" />
+    <Folder Include="Facturacion\" />
+    <Folder Include="Productos\" />
+  </ItemGroup>
+
 </Project>
