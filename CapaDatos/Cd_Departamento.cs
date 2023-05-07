@@ -7,16 +7,16 @@ namespace CapaDatos
 {
     public class Cd_Departamento
     {
-        public void AggDepartamento(Ce_Departamento AggDepartamento)
+        public void AgregarDepartamento(Ce_Departamento AgregarDepartamento)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 conex.Open();
-                using (SqlCommand cmd = new SqlCommand("SP_AggDepartamento", conex))
+                using (SqlCommand cmd = new SqlCommand("AgregarDepartamento", conex))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@nombre", AggDepartamento.nombre);
-                    cmd.Parameters.AddWithValue("@estado", AggDepartamento.estado);
+                    cmd.Parameters.AddWithValue("@nombre", AgregarDepartamento.nombre);
+                    cmd.Parameters.AddWithValue("@estado", AgregarDepartamento.estado);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -37,7 +37,7 @@ namespace CapaDatos
             return dt;
         }
 
-        public void ActDepartamento(Ce_Departamento ActDepartamento)
+        public void ActualizarDepartamento(Ce_Departamento ActualizarDepartamento)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
@@ -45,15 +45,15 @@ namespace CapaDatos
                 using (SqlCommand cmd = new SqlCommand("SP_AggDepartamento", conex))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@id", ActDepartamento.id);
-                    cmd.Parameters.AddWithValue("@nombre", ActDepartamento.nombre);
-                    cmd.Parameters.AddWithValue("@estado", ActDepartamento.estado);
+                    cmd.Parameters.AddWithValue("@id", ActualizarDepartamento.id);
+                    cmd.Parameters.AddWithValue("@nombre", ActualizarDepartamento.nombre);
+                    cmd.Parameters.AddWithValue("@estado", ActualizarDepartamento.estado);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
 
-        public void ElimDepartamento(Ce_Departamento ElimDepartamento)
+        public void EliminarDepartamento(Ce_Departamento EliminarDepartamento)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
@@ -61,7 +61,7 @@ namespace CapaDatos
                 using (SqlCommand cmd = new SqlCommand("SP_AggDepartamento", conex))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@id", ElimDepartamento.id);
+                    cmd.Parameters.AddWithValue("@id", EliminarDepartamento.id);
                     cmd.ExecuteNonQuery();
                 }
             }

@@ -10,15 +10,15 @@ namespace CapaNegocios.UsuarioSistema
     {
         private Cd_Usuario oCd_Usuario = new Cd_Usuario();
 
-        public bool AniadirUsuario(Ce_Usuario AniadirUsuario)
+        public bool AgregarUsuario(Ce_Usuario AgregarUsuario)
         {
-            switch (ConsultarUsuario(AniadirUsuario))
+            switch (ConsultarUsuario(AgregarUsuario))
             {
                 case true:
                     return false;
                 case false:
-                    AniadirUsuario.ContraseniaUsuario = EncriptarContrasenia(AniadirUsuario);
-                    oCd_Usuario.AniadirUsuario(AniadirUsuario);
+                    AgregarUsuario.ContraseniaUsuario = EncriptarContrasenia(AgregarUsuario);
+                    oCd_Usuario.AgregarUsuario(AgregarUsuario);
                     return true;
             }
         }
@@ -39,19 +39,20 @@ namespace CapaNegocios.UsuarioSistema
 
         public bool ValidarUsuario(Ce_Usuario ValidarUsuario)
         {
-            bool valUsuario = false;
-
             ValidarUsuario.ContraseniaUsuario = EncriptarContrasenia(ValidarUsuario);
+
             var Consulta = from d in oCd_Usuario.ConsultarUsuario()
                            where d.NombreUsuario == ValidarUsuario.NombreUsuario && d.ContraseniaUsuario == ValidarUsuario.ContraseniaUsuario && d.ID_rol == ValidarUsuario.ID_rol
                            select d;
 
             if (Consulta.Any())
             {
-                valUsuario = true;
+                return true;
             }
-
-            return valUsuario;
+            else
+            {
+                return false;
+            }
         }
 
         public void ActualizarUsuario(Ce_Usuario ActualizarUsuario)

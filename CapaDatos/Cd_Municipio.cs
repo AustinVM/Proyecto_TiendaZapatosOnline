@@ -7,17 +7,17 @@ namespace CapaDatos
 {
     public class Cd_Municipio
     {
-        public void AggMunicipio(Ce_Municipio AggMunicipio)
+        public void AgregarMunicipio(Ce_Municipio AgregarMunicipio)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 conex.Open();
-                using (SqlCommand cmd = new SqlCommand("SP_AggMunicipio", conex))
+                using (SqlCommand cmd = new SqlCommand("SP_AgregarMunicipio", conex))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@nombre", AggMunicipio.nombre);
-                    cmd.Parameters.AddWithValue("@id_Departamento", AggMunicipio.id_Departamento);
-                    cmd.Parameters.AddWithValue("@estado", AggMunicipio.estado);
+                    cmd.Parameters.AddWithValue("@nombre", AgregarMunicipio.nombre);
+                    cmd.Parameters.AddWithValue("@id_Departamento", AgregarMunicipio.id_Departamento);
+                    cmd.Parameters.AddWithValue("@estado", AgregarMunicipio.estado);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -39,31 +39,31 @@ namespace CapaDatos
             return dt;
         }
 
-        public void ActMunicipio(Ce_Municipio ActMunicipio)
+        public void ActualizarMunicipio(Ce_Municipio ActualizarMunicipio)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 conex.Open();
-                using (SqlCommand cmd = new SqlCommand("SP_AggMunicipio", conex))
+                using (SqlCommand cmd = new SqlCommand("SP_ActualizarMunicipio", conex))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@id", ActMunicipio.id);
-                    cmd.Parameters.AddWithValue("@nombre", ActMunicipio.nombre);
-                    cmd.Parameters.AddWithValue("@estado", ActMunicipio.estado);
+                    cmd.Parameters.AddWithValue("@id", ActualizarMunicipio.id);
+                    cmd.Parameters.AddWithValue("@nombre", ActualizarMunicipio.nombre);
+                    cmd.Parameters.AddWithValue("@estado", ActualizarMunicipio.estado);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
 
-        public void ElimMunicipio(Ce_Municipio ElimMunicipio)
+        public void EliminarMunicipio(Ce_Municipio EliminarMunicipio)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 conex.Open();
-                using (SqlCommand cmd = new SqlCommand("SP_AggMunicipio", conex))
+                using (SqlCommand cmd = new SqlCommand("SP_EliminarMunicipio", conex))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@id", ElimMunicipio.id);
+                    cmd.Parameters.AddWithValue("@id", EliminarMunicipio.id);
                     cmd.ExecuteNonQuery();
                 }
             }

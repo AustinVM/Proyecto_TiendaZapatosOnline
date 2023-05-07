@@ -7,22 +7,26 @@ namespace CapaNegocios.UsuarioSistema
     public class Cn_Rol
     {
         Cd_Rol oCd_rol = new Cd_Rol();
-        DataTable tabla;
 
-        public Cn_Rol()
+        public void AgregarRol(Ce_Rol AgregarRol)
         {
-            tabla = new DataTable();
-        }
-
-        public void AniadirRol(Ce_Rol rol)
-        {
-            oCd_rol.AniadirRol(rol);
+            oCd_rol.AgregarRol(AgregarRol);
         }
 
         public DataTable ConsultarRol()
         {
-            tabla = oCd_rol.ConsultarRol();
+            DataTable tabla = oCd_rol.ConsultarRol();
             return tabla;
+        }
+
+        public void ActualizarRol(Ce_Rol ActualizarRol)
+        {
+            oCd_rol.ActualizarRol(ActualizarRol);
+        }
+
+        public void EliminarRol(Ce_Rol EliminarRol)
+        {
+            oCd_rol.EliminarRol(EliminarRol);
         }
     }
 }

@@ -7,19 +7,19 @@ namespace CapaDatos.UsuarioSistema
 {
     public class Cd_Rol
     {
-        public void AniadirRol(Ce_Rol AniadirRol)
+        public void AgregarRol(Ce_Rol AgregarRol) // Inicio del metodo para agregar un rol
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 try
                 {
                     conex.Open();
-                    using (SqlCommand cmd = new SqlCommand("SP_AniadirRol", conex))
+                    using (SqlCommand cmd = new SqlCommand("SP_AgregarRol", conex))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@id", AniadirRol.idRol);
-                        cmd.Parameters.AddWithValue("@nombre", AniadirRol.nombreRol);
-                        cmd.Parameters.AddWithValue("@estado", AniadirRol.estadoRol);
+                        cmd.Parameters.AddWithValue("@id", AgregarRol.idRol);
+                        cmd.Parameters.AddWithValue("@nombre", AgregarRol.nombreRol);
+                        cmd.Parameters.AddWithValue("@estado", AgregarRol.estadoRol);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -32,9 +32,9 @@ namespace CapaDatos.UsuarioSistema
                     Console.WriteLine("Ocurrio un error." + ex.Message);
                 }
             }
-        }
+        } // Fin del metodo para agregar un rol
 
-        public DataTable ConsultarRol()
+        public DataTable ConsultarRol() // Inicio del metodo de consultar rol (trae todos los roles de la base de datos)
         {
             DataTable tabla = new DataTable();
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
@@ -59,9 +59,9 @@ namespace CapaDatos.UsuarioSistema
                 }
                 return tabla;
             }
-        }
+        } // Fin del metodo de consultar rol
 
-        public void ActualizarRol(Ce_Rol ActualizarRol)
+        public void ActualizarRol(Ce_Rol ActualizarRol) // Inicio del metodo para actualizar un rol
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
@@ -86,9 +86,9 @@ namespace CapaDatos.UsuarioSistema
                     Console.WriteLine("Ocurrio un error." + ex.Message);
                 }
             }
-        }
+        } // Fin del metodo para actualizar un rol
 
-        public void EliminarRol(Ce_Rol EliminarRol)
+        public void EliminarRol(Ce_Rol EliminarRol) // Inicio del metodo para eliminar un rol
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
@@ -111,6 +111,6 @@ namespace CapaDatos.UsuarioSistema
                     Console.WriteLine("Ocurrio un error." + ex.Message);
                 }
             }
-        }
+        } // Fin del metodo para eliminar un rol
     }
 }

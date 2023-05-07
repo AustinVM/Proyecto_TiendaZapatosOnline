@@ -7,20 +7,20 @@ namespace CapaDatos.UsuarioSistema
 {
     public class Cd_Usuario
     {
-        public void AniadirUsuario(Ce_Usuario AniadirUsuario)
+        public void AgregarUsuario(Ce_Usuario AgregarUsuario)
         {
             using (SqlConnection conex = new SqlConnection(Cd_Conexion._rutaBaseDatos))
             {
                 try
                 {
                     conex.Open();
-                    using (SqlCommand cmd = new SqlCommand("SP_AniadirUsuario", conex))
+                    using (SqlCommand cmd = new SqlCommand("SP_AgregarUsuario", conex))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@nombre", AniadirUsuario.NombreUsuario);
-                        cmd.Parameters.AddWithValue("@contrasenia", AniadirUsuario.ContraseniaUsuario);
-                        cmd.Parameters.AddWithValue("@ID_rol", AniadirUsuario.ID_rol);
-                        cmd.Parameters.AddWithValue("@estado", AniadirUsuario.EstadoUsuario);
+                        cmd.Parameters.AddWithValue("@nombre", AgregarUsuario.NombreUsuario);
+                        cmd.Parameters.AddWithValue("@contrasenia", AgregarUsuario.ContraseniaUsuario);
+                        cmd.Parameters.AddWithValue("@ID_rol", AgregarUsuario.ID_rol);
+                        cmd.Parameters.AddWithValue("@estado", AgregarUsuario.EstadoUsuario);
                         cmd.ExecuteNonQuery();
                     }
                 }

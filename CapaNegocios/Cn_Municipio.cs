@@ -8,9 +8,9 @@ namespace CapaNegocios
     {
         Cd_Municipio oCd_Municipio = new Cd_Municipio();
 
-        public void AggMunicipio(Ce_Municipio AggMunicipio)
+        public void AgregarMunicipio(Ce_Municipio AgregarMunicipio)
         {
-            oCd_Municipio.ActMunicipio(AggMunicipio);
+            oCd_Municipio.AgregarMunicipio(AgregarMunicipio);
         }
 
         public DataTable ConsultarMunicipio(Ce_Municipio ConsultarMunicipio)
@@ -19,14 +19,14 @@ namespace CapaNegocios
             return dt;
         }
 
-        public void ActMunicipio(Ce_Municipio ActMunicipio)
+        public void ActualizarMunicipio(Ce_Municipio ActualizarMunicipio)
         {
-            oCd_Municipio.ActMunicipio(ActMunicipio);
+            oCd_Municipio.ActualizarMunicipio(ActualizarMunicipio);
         }
 
-        public void ElimMunicipio(Ce_Municipio ElimMunicipio)
+        public void EliminarMunicipio(Ce_Municipio EliminarMunicipio)
         {
-            oCd_Municipio.ElimMunicipio(ElimMunicipio);
+            oCd_Municipio.EliminarMunicipio(EliminarMunicipio);
         }
     }
 }

@@ -8,9 +8,9 @@ namespace CapaNegocios
     {
         Cd_Departamento oCd_Departamento = new Cd_Departamento();
 
-        public void AggDepartamento(Ce_Departamento AggDepartamento)
+        public void AgregarDepartamento(Ce_Departamento AgregarDepartamento)
         {
-            oCd_Departamento.ActDepartamento(AggDepartamento);
+            oCd_Departamento.AgregarDepartamento(AgregarDepartamento);
         }
 
         public DataTable ConsultarDepartamento()
@@ -19,14 +19,14 @@ namespace CapaNegocios
             return dt;
         }
 
-        public void ActDepartamento(Ce_Departamento ActDepartamento)
+        public void ActualizarDepartamento(Ce_Departamento ActualizarDepartamento)
         {
-            oCd_Departamento.ActDepartamento(ActDepartamento);
+            oCd_Departamento.ActualizarDepartamento(ActualizarDepartamento);
         }
 
-        public void ElimDepartamento(Ce_Departamento ElimDepartamento)
+        public void EliminarDepartamento(Ce_Departamento EliminarDepartamento)
         {
-            oCd_Departamento.ElimDepartamento(ElimDepartamento);
+            oCd_Departamento.EliminarDepartamento(EliminarDepartamento);
         }
     }
 }

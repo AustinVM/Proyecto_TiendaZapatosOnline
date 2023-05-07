@@ -17,4 +17,10 @@
     <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Facturacion\" />
+    <Folder Include="Cliente\" />
+    <Folder Include="Productos\" />
+  </ItemGroup>
+
 </Project>
