@@ -2,13 +2,13 @@
 {
     public class Cp_VarGlobal
     {
-        public static string NombreUsuario { get; set; }
-        public static int idRolUsuario { get; set; }
+        private string NombreUsuario { get; set; }
+        private int idRolUsuario { get; set; }
 
-        public Cp_VarGlobal()
+        public Cp_VarGlobal(string NombreUsuario, int idRolUsuario)
         {
-            NombreUsuario = "";
-            idRolUsuario = 0;
+            this.NombreUsuario = NombreUsuario;
+            this.idRolUsuario = idRolUsuario;
         }
     }
 }

@@ -192,14 +192,13 @@ GO
 
 CREATE PROCEDURE LOL
     @CONSULTA NVARCHAR(MAX),
-	@TABLA NVARCHAR(MAX),
     @CONDICION NVARCHAR(MAX)
 AS
 BEGIN
     DECLARE @sql NVARCHAR(MAX)
 
     -- Construir la consulta SQL completa
-    SET @sql = N'SELECT ' + QUOTENAME(@CONSULTA) + ' FROM ' + @TABLA + ' WHERE ' + @CONDICION
+    SET @sql = N'SELECT ' + QUOTENAME(@CONSULTA) + ' FROM usuario WHERE ' + @CONDICION
 
     -- Ejecutar la consulta
     EXEC sp_executesql @sql
