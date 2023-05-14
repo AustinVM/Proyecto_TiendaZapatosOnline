@@ -64,7 +64,7 @@ GO
 CREATE TABLE municipio (
 	id INT IDENTITY (1,1) PRIMARY KEY,
 	nombre VARCHAR (100) NOT NULL,
-	id_Departamento INT NOT NULL FOREIGN KEY REFERENCES departamento (id) ON DELETE NO ACTION ON UPDATE CASCADE CHECK (id_Departamento > 0),
+	id_Departamento INT NOT NULL FOREIGN KEY REFERENCES departamento (id) ON DELETE NO ACTION ON UPDATE CASCADE,
 	estado BIT NOT NULL DEFAULT 1
 );
 GO
@@ -192,13 +192,14 @@ GO
 
 CREATE PROCEDURE LOL
     @CONSULTA NVARCHAR(MAX),
+	@TABLA NVARCHAR(MAX),
     @CONDICION NVARCHAR(MAX)
 AS
 BEGIN
     DECLARE @sql NVARCHAR(MAX)
 
     -- Construir la consulta SQL completa
-    SET @sql = N'SELECT ' + QUOTENAME(@CONSULTA) + ' FROM usuario WHERE ' + @CONDICION
+    SET @sql = N'SELECT ' + QUOTENAME(@CONSULTA) + ' FROM ' + @TABLA + ' WHERE ' + @CONDICION
 
     -- Ejecutar la consulta
     EXEC sp_executesql @sql

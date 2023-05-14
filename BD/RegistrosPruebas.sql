@@ -2,8 +2,8 @@ USE PagWebPruebas
 GO
 
 INSERT INTO rol (nombre) VALUES ('Administrador'), 
-							    ('Auxiliar'),
 							    ('Vendedor'),
+							    ('Auxiliar'),
 							    ('Bodega')
 GO
 
