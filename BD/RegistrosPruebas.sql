@@ -1,10 +1,10 @@
-USE PagWebPruebas
+USE ProyectoTiendaZapatos
 GO
 
-INSERT INTO rol (nombre) VALUES ('Administrador'), 
-							    ('Vendedor'),
-							    ('Auxiliar'),
-							    ('Bodega')
+INSERT INTO rol VALUES ('Administrador', DEFAULT), 
+					   ('Vendedor', DEFAULT),
+					   ('Auxiliar', DEFAULT),
+					   ('Bodega', DEFAULT)
 GO
 
 INSERT INTO usuario VALUES ('elAdmin', 'B221D9DBB083A7F33428D7C2A3C3198AE925614D70210E28716CCAA7CD4DDB79', 1, DEFAULT),
@@ -20,4 +20,8 @@ GO
 INSERT INTO iva VALUES ('17%'), 
 					   ('19%'),
 					   ('No aplica')
+GO
+
+INSERT INTO categoria VALUES ('A', ''),
+
 GO
