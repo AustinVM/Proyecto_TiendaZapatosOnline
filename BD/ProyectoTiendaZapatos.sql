@@ -19,7 +19,7 @@ CREATE TABLE usuario (
 	id INT IDENTITY ( 1 , 1 ) PRIMARY KEY,
 	usuario VARCHAR (50) NOT NULL UNIQUE,
 	contrasenia VARCHAR (100) NOT NULL,
-	id_Rol INT NOT NULL FOREIGN KEY REFERENCES rol (id) ON UPDATE CASCADE CHECK (id_Rol > 0),
+	id_Rol INT NOT NULL FOREIGN KEY REFERENCES rol (id) ON UPDATE CASCADE,
 	estado BIT NOT NULL DEFAULT 1 CHECK (estado IN (0, 1))
 );
 GO
@@ -33,7 +33,7 @@ GO
 
 CREATE TABLE iva (
 	id INT IDENTITY (1,1) PRIMARY KEY,
-	iva VARCHAR (5) NOT NULL CHECK (ISNUMERIC(iva) = 1),
+	iva VARCHAR (5) NOT NULL ,
 	estado BIT NOT NULL DEFAULT 1 CHECK (estado IN (0, 1))
 );
 GO
@@ -42,7 +42,7 @@ CREATE TABLE categoriaCliente (
 	id INT IDENTITY (1,1) PRIMARY KEY,
 	nombre VARCHAR (5) NOT NULL,
 	descripcion VARCHAR (100),
-	descuento INT NOT NULL CHECK (descuento > 0),
+	descuento INT NOT NULL,
 	estado BIT NOT NULL DEFAULT 1 CHECK (estado IN (0, 1))
 );
 GO
@@ -64,7 +64,7 @@ GO
 CREATE TABLE municipio (
 	id INT IDENTITY (1,1) PRIMARY KEY,
 	nombre VARCHAR (100) NOT NULL,
-	id_Departamento INT NOT NULL FOREIGN KEY REFERENCES departamento (id) ON DELETE NO ACTION ON UPDATE CASCADE CHECK (id_Departamento > 0),
+	id_Departamento INT NOT NULL FOREIGN KEY REFERENCES departamento (id) ON DELETE NO ACTION ON UPDATE CASCADE,
 	estado BIT NOT NULL DEFAULT 1 CHECK (estado IN (0, 1))
 );
 GO
@@ -114,17 +114,17 @@ GO
 
 CREATE TABLE cliente (
 	numID VARCHAR (20) PRIMARY KEY,
-	id_TipoDocumento INT NOT NULL FOREIGN KEY REFERENCES tipoDocumento (id) ON DELETE NO ACTION ON UPDATE CASCADE CHECK (id_TipoDocumento > 0),
+	id_TipoDocumento INT NOT NULL FOREIGN KEY REFERENCES tipoDocumento (id) ON DELETE NO ACTION ON UPDATE CASCADE,
 	nombres VARCHAR (100) NOT NULL,
 	apellidos VARCHAR (100) NOT NULL,
-	fchNac DATE NOT NULL CHECK(fchNac < CONVERT(DATE, GETDATE())),
+	fchNac DATE NOT NULL,
 	direccion VARCHAR (100) NOT NULL,
-	telefono VARCHAR (10) NOT NULL CHECK (ISNUMERIC(telefono) = 1),
+	telefono VARCHAR (10) NOT NULL,
 	correoElectronico VARCHAR (100) UNIQUE NOT NULL,
 	contrasenia VARCHAR (100) NOT NULL,
 	id_TipoCliente INT NOT NULL FOREIGN KEY REFERENCES tipoCliente (id) ON DELETE NO ACTION ON UPDATE CASCADE,
-	id_Municipio INT NOT NULL FOREIGN KEY REFERENCES municipio (id) ON DELETE NO ACTION ON UPDATE CASCADE CHECK (id_Municipio > 0),
-	id_Categoria INT NOT NULL FOREIGN KEY REFERENCES categoria (id) ON DELETE NO ACTION ON UPDATE CASCADE CHECK (id_Categoria > 0),
+	id_Municipio INT NOT NULL FOREIGN KEY REFERENCES municipio (id) ON DELETE NO ACTION ON UPDATE CASCADE,
+	id_Categoria INT NOT NULL FOREIGN KEY REFERENCES categoriaCliente (id) ON DELETE NO ACTION ON UPDATE CASCADE,
 	estado BIT NOT NULL DEFAULT 1 CHECK (estado IN (0, 1))
 );
 GO
@@ -221,19 +221,19 @@ AS
 BEGIN
     DECLARE @sql NVARCHAR(MAX)
 
-    -- Validar que el nombre de la tabla sea un identificador v�lido
+    -- Validar que el nombre de la tabla sea un identificador válido
     IF OBJECT_ID(@TABLA) IS NULL
     BEGIN
         RAISERROR('La tabla especificada no existe.', 16, 1)
         RETURN
     END
 
-    -- Escapar el nombre de las columnas para evitar la inyecci�n SQL
+    -- Escapar el nombre de las columnas para evitar la inyección SQL
     SET @CONSULTA = REPLACE(REPLACE(@CONSULTA, '[', ''), ']', '')
     SET @CONSULTA = REPLACE(@CONSULTA, ',', '],[')
     SET @CONSULTA = '[' + @CONSULTA + ']'
 
-    -- Escapar la condici�n de filtrado para evitar la inyecci�n SQL
+    -- Escapar la condición de filtrado para evitar la inyección SQL
     SET @CONDICION = REPLACE(@CONDICION, '''', '''''')
     SET @CONDICION = REPLACE(@CONDICION, '--', '')
     SET @CONDICION = REPLACE(@CONDICION, ';', '')

@@ -7,21 +7,21 @@ INSERT INTO rol VALUES ('Administrador', DEFAULT),
 					   ('Bodega', DEFAULT)
 GO
 
-INSERT INTO usuario VALUES ('elAdmin', 'B221D9DBB083A7F33428D7C2A3C3198AE925614D70210E28716CCAA7CD4DDB79', 1, DEFAULT),
-						   ('elAuxi', 'B221D9DBB083A7F33428D7C2A3C3198AE925614D70210E28716CCAA7CD4DDB79', 2, DEFAULT),
-						   ('elVende', 'B221D9DBB083A7F33428D7C2A3C3198AE925614D70210E28716CCAA7CD4DDB79', 3, DEFAULT),
-						   ('elBodes', 'B221D9DBB083A7F33428D7C2A3C3198AE925614D70210E28716CCAA7CD4DDB79', 4, DEFAULT)
+INSERT INTO usuario VALUES ('el_Admin', 'b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79', 1, DEFAULT),
+						   ('el_Auxi', 'b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79', 2, DEFAULT),
+						   ('el_Vende', 'b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79', 3, DEFAULT),
+						   ('el_Bodes', 'b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79', 4, DEFAULT)
 GO
 
-INSERT INTO tipoDocumento VALUES ('Cedula'), 
-								 ('Cedula extranjeria')
+INSERT INTO tipoDocumento VALUES ('Cedula', DEFAULT), 
+								 ('Cedula extranjeria', DEFAULT),
+								 ('NIT', DEFAULT)
 GO
 
-INSERT INTO iva VALUES ('17%'), 
-					   ('19%'),
-					   ('No aplica')
+INSERT INTO iva VALUES ('12%', DEFAULT),
+			           ('17%', DEFAULT), 
+					   ('19%', DEFAULT),
+					   ('No aplica', DEFAULT)
 GO
 
-INSERT INTO categoria VALUES ('A', ''),
-
-GO
+INSERT INTO categoriaCliente ('', )
