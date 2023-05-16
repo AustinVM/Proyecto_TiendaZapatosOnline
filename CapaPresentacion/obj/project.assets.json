@@ -534,11 +534,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectPath": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaPresentacion\\CapaPresentacion.csproj",
       "packagesPath": "C:\\Users\\villa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaPresentacion\\obj\\",
+      "outputPath": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\villa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -555,11 +555,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaEntidades\\CapaEntidades.csproj": {
-              "projectPath": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaEntidades\\CapaEntidades.csproj"
+            "D:\\Proyecto_TiendaZapatosOnline-main\\CapaEntidades\\CapaEntidades.csproj": {
+              "projectPath": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaEntidades\\CapaEntidades.csproj"
             },
-            "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaNegocios\\CapaNegocios.csproj": {
-              "projectPath": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaNegocios\\CapaNegocios.csproj"
+            "D:\\Proyecto_TiendaZapatosOnline-main\\CapaNegocios\\CapaNegocios.csproj": {
+              "projectPath": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaNegocios\\CapaNegocios.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaEntidades\\CapaEntidades.csproj": {}
+    "D:\\Proyecto_TiendaZapatosOnline-main\\CapaEntidades\\CapaEntidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaEntidades\\CapaEntidades.csproj": {
+    "D:\\Proyecto_TiendaZapatosOnline-main\\CapaEntidades\\CapaEntidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaEntidades\\CapaEntidades.csproj",
+        "projectUniqueName": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaEntidades\\CapaEntidades.csproj",
         "projectName": "CapaEntidades",
-        "projectPath": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaEntidades\\CapaEntidades.csproj",
+        "projectPath": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaEntidades\\CapaEntidades.csproj",
         "packagesPath": "C:\\Users\\villa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\villa\\OneDrive\\Documentos\\Proyecto PagWeb ¡¡ARREGLAR!!\\Proyecto\\Escritorio\\CapaEntidades\\obj\\",
+        "outputPath": "D:\\Proyecto_TiendaZapatosOnline-main\\CapaEntidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\villa\\AppData\\Roaming\\NuGet\\NuGet.Config",

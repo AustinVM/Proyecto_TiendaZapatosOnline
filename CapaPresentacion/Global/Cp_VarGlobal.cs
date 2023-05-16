@@ -1,14 +1,14 @@
 ﻿namespace CapaPresentacion.Global
 {
-    public class Cp_VarGlobal
+    public static class Cp_VarGlobal
     {
-        private string NombreUsuario { get; set; }
-        private int idRolUsuario { get; set; }
+        public static string NombreUsuario { get; set; }
+        public static int idRolUsuario { get; set; }
 
-        public Cp_VarGlobal(string NombreUsuario, int idRolUsuario)
-        {
-            this.NombreUsuario = NombreUsuario;
-            this.idRolUsuario = idRolUsuario;
-        }
+        //public Cp_VarGlobal()
+        //{
+        //    NombreUsuario = "";
+        //    idRolUsuario = 0;
+        //}
     }
 }

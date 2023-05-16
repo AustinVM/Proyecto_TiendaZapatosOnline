@@ -32,3 +32,20 @@ c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escri
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\bin\Debug\net6.0\CapaNegocios.deps.json
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\bin\Debug\net6.0\CapaNegocios.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\bin\Debug\net6.0\CapaNegocios.pdb
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\bin\Debug\net6.0\CapaDatos.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\bin\Debug\net6.0\CapaEntidades.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\bin\Debug\net6.0\CapaDatos.pdb
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\bin\Debug\net6.0\CapaEntidades.pdb
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.AssemblyReference.cache
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfoInputs.cache
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.AssemblyInfo.cs
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.csproj.CopyComplete
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\refint\CapaNegocios.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\CapaNegocios.pdb
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaNegocios\obj\Debug\net6.0\ref\CapaNegocios.dll

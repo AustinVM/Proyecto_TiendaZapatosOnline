@@ -28,3 +28,18 @@ c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escri
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaDatos\obj\Debug\net6.0\CapaDatos.csproj.CoreCompileInputs.cache
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaDatos\obj\Debug\net6.0\CapaDatos.csproj.CopyComplete
 c:\Users\villa\OneDrive\Documentos\Proyecto PagWeb ¡¡ARREGLAR!!\Proyecto\Escritorio\CapaDatos\obj\Debug\net6.0\ref\CapaDatos.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\bin\Debug\net6.0\CapaDatos.deps.json
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\bin\Debug\net6.0\CapaDatos.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\bin\Debug\net6.0\CapaDatos.pdb
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\bin\Debug\net6.0\CapaEntidades.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\bin\Debug\net6.0\CapaEntidades.pdb
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.AssemblyInfoInputs.cache
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.AssemblyInfo.cs
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.csproj.CopyComplete
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\refint\CapaDatos.dll
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\CapaDatos.pdb
+C:\Users\Sena CSET\Documents\Proyecto_TiendaZapatosOnline-main\CapaDatos\obj\Debug\net6.0\ref\CapaDatos.dll

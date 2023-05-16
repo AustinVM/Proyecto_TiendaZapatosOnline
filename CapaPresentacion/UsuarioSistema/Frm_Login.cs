@@ -1,13 +1,13 @@
 ﻿using CapaEntidades.UsuarioSistema;
 using CapaNegocios.UsuarioSistema;
+using CapaPresentacion.Global;
 
 namespace CapaPresentacion
 {
     public partial class Frm_Login : Form
     {
-        private Cn_Usuario oCn_Usuario = new Cn_Usuario();
-        private Ce_Usuario oCe_Usuario = new Ce_Usuario();
-        private Cn_Rol oCn_Rol = new Cn_Rol();
+        private readonly Cn_Usuario oCn_Usuario = new();
+        private readonly Cn_Rol oCn_Rol = new();
 
         public Frm_Login()
         {
@@ -19,8 +19,8 @@ namespace CapaPresentacion
         private void ListarRoles()
         {
             CmbRol.DataSource = oCn_Rol.ConsultarRol();
-            CmbRol.ValueMember = "id";
-            CmbRol.DisplayMember = "nombre";
+            CmbRol.ValueMember = "Id";
+            CmbRol.DisplayMember = "Nombre";
         }
 
         #endregion
@@ -32,9 +32,7 @@ namespace CapaPresentacion
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
-            oCe_Usuario.ID_rol = Convert.ToInt32(CmbRol.SelectedValue);
-            oCe_Usuario.NombreUsuario = TxtUsuario.Text;
-            oCe_Usuario.ContraseniaUsuario = TxtContrasenia.Text;
+            Ce_Usuario oCe_Usuario = new(TxtUsuario.Text, TxtContrasenia.Text, Convert.ToInt32(CmbRol.SelectedValue));
 
             if (string.IsNullOrEmpty(TxtUsuario.Text) || string.IsNullOrEmpty(TxtContrasenia.Text))
             {
@@ -51,7 +49,9 @@ namespace CapaPresentacion
                     switch (oCn_Usuario.ValidarUsuario(oCe_Usuario))
                     {
                         case true:
-                            Frm_MenuPrincipal MenPrin = new Frm_MenuPrincipal();
+                            Cp_VarGlobal.NombreUsuario = TxtUsuario.Text;
+                            Cp_VarGlobal.idRolUsuario = Convert.ToInt32(CmbRol.SelectedValue);
+                            Frm_MenuPrincipal MenPrin = new();
                             MenPrin.Show();
                             this.Hide();
                             break;
