@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MenuPrincipal";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MenuPrincipal));
+            panel1 = new Panel();
+            panel2 = new Panel();
+            PbxProductos = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PbxProductos).BeginInit();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(0, 122, 204);
+            panel1.Controls.Add(PbxProductos);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 450);
+            panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(64, 64, 64);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(250, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(666, 450);
+            panel2.TabIndex = 1;
+            // 
+            // PbxProductos
+            // 
+            PbxProductos.BackColor = Color.Transparent;
+            PbxProductos.BackgroundImage = (Image)resources.GetObject("PbxProductos.BackgroundImage");
+            PbxProductos.BackgroundImageLayout = ImageLayout.Stretch;
+            PbxProductos.BorderStyle = BorderStyle.Fixed3D;
+            PbxProductos.InitialImage = (Image)resources.GetObject("PbxProductos.InitialImage");
+            PbxProductos.Location = new Point(12, 75);
+            PbxProductos.Name = "PbxProductos";
+            PbxProductos.Size = new Size(100, 50);
+            PbxProductos.TabIndex = 0;
+            PbxProductos.TabStop = false;
+            // 
+            // Frm_MenuPrincipal
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(15, 15, 15);
+            ClientSize = new Size(916, 450);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Frm_MenuPrincipal";
+            Text = "MenuPrincipal";
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)PbxProductos).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
+        private Panel panel2;
+        private PictureBox PbxProductos;
     }
 }

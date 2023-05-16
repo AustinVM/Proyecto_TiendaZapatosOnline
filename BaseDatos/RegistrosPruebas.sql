@@ -24,4 +24,4 @@ INSERT INTO iva VALUES ('12%', DEFAULT),
 					   ('No aplica', DEFAULT)
 GO
 
-INSERT INTO categoriaCliente ('', )
+INSERT INTO tallas VALUES ('12', DEFAULT)
